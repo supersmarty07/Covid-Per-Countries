@@ -1,1 +1,21 @@
-<p>Input field and Search Button</p>
+<h1 class="text-center display-1 align-middle p-5">
+  Covid Per Countries Search
+</h1>
+<form action="" class="">
+  <div class="input-group mb-3">
+    <input
+      [(ngModel)]="countryName"
+      type="text"
+      class="form-control form-control-lg"
+      placeholder="Search Here"
+      name="country"
+    />
+    <button
+      type="submit"
+      class="input-group-text btn-success"
+      (click)="passCountryName()"
+    >
+      <i class="bi bi-search me-2"></i> Search
+    </button>
+  </div>
+</form>

@@ -1,2 +1,4 @@
-<app-search-bar></app-search-bar> <app-country></app-country
-><app-statistics></app-statistics>
+<div class="container">
+  <app-search-bar (newCountry)="receiveCountry($event)"></app-search-bar>
+  <app-detail></app-detail>
+</div>
